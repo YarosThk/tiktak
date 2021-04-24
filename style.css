@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+html{
+    font-size: 100%; 
+}
+
+.gameContainer{
+    background-color: ghostwhite;
+    position: relative;
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 1.4vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding-bottom: 1rem;
+}
+
+.selectMark{
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.playersContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+
+.player{
+    background-color:#fdfdfd;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    border: 0.1rem solid rgba(68, 68, 68, 0.233);
+    border-radius: 0.8rem;
+    width: 6rem;
+    height: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: 0.2s all;
+}
+
+.active{
+    background-color:#f6d7e1;
+    transform: scale(1.1);
+}
+
+.boardContainer{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #33333332;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gameCell{
+    background-color:#f0fffa;
+    border: 1px solid #33333332;
+    transition: 0.2s all;
+    font-size: 5rem;
+    font-family: 'RocknRoll One', sans-serif;
+    color: #ecc8d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gameCell:hover{
+    background-color:#f8f2f2;
+    
+}
+
+@media (max-width: 600px){
+    *{
+        font-size: 1rem;
+    }
+
+    .boardContainer{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .gameContainer{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    *{
+        font-size: 0.8rem;
+    }
+
+    .boardContainer{
+        width: 350px;
+        height: 350px;
+    }
+
+    .gameCell{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 400px){
+    *{
+        font-size: 0.8rem;
+    }
+
+    .boardContainer{
+        width: 300px;
+        height: 300px;
+    }
+
+    .gameCell{
+        font-size: 3rem;
+    }
+
+    .player{
+        width: 5rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 300px){
+    *{
+        font-size: 0.5rem;
+    }
+
+    .boardContainer{
+        width: 250px;
+        height: 250px;
+    }
+
+    .gameCell{
+        font-size: 3rem;
+    }
+
+    .player{
+        width: 5rem;
+        height: 1.4rem;
+        font-size: 0.7rem;
+    }
+
+
+}
